@@ -8,6 +8,6 @@ public class FeatureOneController {
 
     @GetMapping("/")
     public String Feature() {
-        return "Hello from Feature number 1";
+        return "Hello from Feature number x";
     }
 }
