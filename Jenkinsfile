@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        DOCKER_REPO = 'ashrafelshazlii/gitops-demo'
+        DOCKER_REPO = 'ashrafelshazlii/java-app-test'
     }
 
     stages {
