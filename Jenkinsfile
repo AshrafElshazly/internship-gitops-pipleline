@@ -84,7 +84,7 @@ pipeline {
                             git clone https://${GIT_USER}:${GIT_TOKEN}@github.com/ashrafelshazly/internship-gitops-manifests.git
                             cd internship-gitops-manifests/${overlayPath}
 
-                            kustomize edit set image ashrafelshazlii/gitops-demo=ashrafelshazlii/gitops-demo:${APP_VERSION}
+                            kustomize edit set image ${DOCKER_REPO}:${APP_VERSION}
 
                             git add .
                             git commit -m "Update image to ${APP_VERSION} in ${overlayPath} via Jenkins"
